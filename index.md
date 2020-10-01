@@ -24,7 +24,7 @@ To load the library in an arbitrary namespace (for example `cop`) do:
 Don't forget to include the library dependencies, [Underscore] and
 [Traits].
 
-### On the server (coming soon)
+### On the server 
 
 Install the module with:
 
@@ -35,18 +35,18 @@ npm install context-traits
 And load it as usual:
 
 {% highlight javascript %}
-var cop = require('context-traits');
+const cop = require('context-traits');
 {% endhighlight %}
 
 Diving In
 ---------
 
-- [Project repository](https://github.com/tagae/context-traits)
+- [Project repository](https://github.com/ncardozo/context-traits)
 - [Annotated source code](docs/prologue.html)
 - [Browser compatibility](test/)
 
 
-[production version]: https://raw.github.com/tagae/context-traits/gh-pages/dist/context-traits.min.js
-[development version]: https://raw.github.com/tagae/context-traits/gh-pages/dist/context-traits.js
+[production version]: https://raw.github.com/ncardozo/context-traits/gh-pages/dist/context-traits.min.js
+[development version]: https://raw.github.com/n.cardozo/context-traits/gh-pages/dist/context-traits.js
 [Underscore]: http://documentcloud.github.com/underscore/
-[Traits]: http://traitsjs.org/
+[Traits]: https://traitsjs.github.io/traits.js-website/
