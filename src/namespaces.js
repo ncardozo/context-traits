@@ -7,7 +7,7 @@
  *             2016- Uniandes
 */
 
-const Namespace = function(name, parent = null) {
+Namespace = function(name, parent = null) {
   if (!name) {
     throw new Error("Namespaces must have a name");
   }

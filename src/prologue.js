@@ -15,7 +15,7 @@
 // modules must be inserted by hand using `<script>` tags, but this
 // function can at least remind the user that such libraries need to be
 // loaded.
-const ensureObject = function(name, file, path = []) {
+ensureObject = function(name, file, path = []) {
   let object = this[name]; // reads current module or `window` object
   if (object == null) {
     if (typeof require !== 'undefined' && require) {

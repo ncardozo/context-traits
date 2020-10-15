@@ -4,8 +4,7 @@
 */
 // Strategies for composition of adaptations.
 
-const strategies = {
-
+ strategies = {
   compose(adaptation, trait) {
     const resultingTrait = Trait.compose(adaptation.trait, trait);
     for (let name of Object.keys(resultingTrait)) {

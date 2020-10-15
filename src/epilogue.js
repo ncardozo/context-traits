@@ -4,7 +4,6 @@
 */
 
 // If there is no explicit `exports`, take global namespace
-let exports;
 if(!exports) {
   exports = this;
 }

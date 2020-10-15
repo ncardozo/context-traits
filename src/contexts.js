@@ -4,7 +4,7 @@
 */
 
 // Main context namespace.
-const contexts = new Namespace('contexts');
+contexts = new Namespace('contexts');
 
 contexts.Default = new Context('default');
 

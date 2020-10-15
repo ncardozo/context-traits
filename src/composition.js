@@ -9,7 +9,7 @@
  *             2016- Uniandes
  */
 
-const traits = {};
+traits = {};
 
 traits.Extensible = Trait({
   proceed() {
@@ -40,7 +40,7 @@ traits.Extensible = Trait({
   }
 });
 
-const traceableMethod = function(object, name, method) {
+traceableMethod = function(object, name, method) {
   var wrapper = function() {
     const {
       invocations
@@ -55,7 +55,7 @@ const traceableMethod = function(object, name, method) {
   return wrapper;
 };
 
-const traceableTrait = function(trait, object) {
+traceableTrait = function(trait, object) {
   const newTrait = Trait.compose(trait); // copy
   for (let name of Object.keys(newTrait || {})) {
     const propdesc = newTrait[name];
@@ -111,7 +111,7 @@ us.extend(Policy.prototype, {
 // The _activation age policy_ is the policy used by the default
 // context manager.
 
-const ActivationAgePolicy = function() {
+ActivationAgePolicy = function() {
   Policy.call(this);
   return this;
 };
