@@ -1,14 +1,13 @@
 /*
  * decaffeinate suggestions:
- * DS101: Remove unnecessary use of Array.from
  * DS102: Remove unnecessary code created because of implicit returns
  * DS203: Remove `|| {}` from converted for-own loops
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
  */
-// [Context Traits](https://github.com/ncardozo/context-traits).
-// Copyright © 2012—2015 UCLouvain.
-//             2016- Uniandes
-
+/* [Context Traits](https://github.com/ncardozo/context-traits).
+ * Copyright © 2012—2015 UCLouvain.
+ *             2016- Uniandes
+ */
 
 const traits = {};
 
@@ -23,7 +22,7 @@ traits.Extensible = Trait({
     if (invocations.length === 0) {
       throw new Error("Proceed must be called from an adaptation");
     }
-    let [object, method, name, args] = Array.from(invocations.top());
+    let [object, method, name, args] = invocations.top();
     // Arguments passed to `proceed` take precedence over those of the
     // original invocation.
     args = arguments.length === 0 ? args : arguments;
@@ -73,7 +72,7 @@ us.extend(Manager.prototype, {
 
   orderedMethods(object, name) {
     const adaptations = this.adaptationChainFor(object);
-    return Array.from(adaptations).map((adaptation) =>
+    return adaptations.map((adaptation) =>
       adaptation.trait[name].value);
   }
 }

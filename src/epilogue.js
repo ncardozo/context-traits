@@ -1,6 +1,7 @@
-// [Context Traits](https://github.com/ncardozo/context-traits).
-// Copyright © 2012—2015 UCLouvain.
-//             2016- Uniandes
+/* [Context Traits](https://github.com/ncardozo/context-traits).
+ * Copyright © 2012—2015 UCLouvain.
+ *             2016- Uniandes
+*/
 
 // If there is no explicit `exports`, take global namespace
 let exports;

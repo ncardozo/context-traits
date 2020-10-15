@@ -2,9 +2,11 @@
  * decaffeinate suggestions:
  * DS102: Remove unnecessary code created because of implicit returns
  */
-// [Context Traits](https://github.com/ncardozo/context-traits).
-// Copyright © 2012—2015 UCLouvain.
-//             2016- Uniandes
+/* [Context Traits](https://github.com/ncardozo/context-traits).
+ * Copyright © 2012—2015 UCLouvain.
+ *             2016- Uniandes
+*/
+
 // Host Features
 // -------------
 
